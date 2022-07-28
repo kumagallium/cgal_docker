@@ -1,0 +1,4 @@
+*.off
+*.tri
+CMakeLists.txt
+build
