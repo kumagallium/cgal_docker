@@ -46,7 +46,7 @@ docker-compose exec cgal ./cgal_init.sh
 ```
 docker-compose exec cgal ./simple_example/cpp_exec.sh
 ```
-*If you want to execute your code, create a new directory, place the cpp file and "cpp_exec.sh" in it, and execute it referring to the code in 4.
+*If you want to execute your code, create a new directory in src, place the cpp file and "cpp_exec.sh" in it, and execute it referring to the code in 4.
 
 <a name="cite"></a>
 ## How to cite
