@@ -6,6 +6,10 @@
 	- [Introduction](#introduction)
 	- [Installation](#installation)
 	- [Examples](#examples)
+		- [1. Clone this repository to your local environment](#1-clone-this-repository-to-your-local-environment)
+		- [2. Build the docker image](#2-build-the-docker-image)
+		- [3. Configure the initial CGAL settings](#3-configure-the-initial-cgal-settings)
+		- [4. Compile and execute the sample code](#4-compile-and-execute-the-sample-code)
 	- [How to cite](#how-to-cite)
 	- [How to contribute](#how-to-contribute)
 	- [Funding support](#funding-support)
@@ -19,11 +23,30 @@ The purpose of this repository is to build a <a href="https://www.cgal.org/">CGA
 
 <a name="install"></a>
 ## Installation
-Under construction
+This repository requires only <b>docker</b> and <b>docker-compose</b> execution environment.
+
 
 <a name="example"></a>
 ## Examples
-Under construction
+
+### 1. Clone this repository to your local environment
+```
+git clone https://github.com/kumagallium/cgal_docker.git
+cd cgal_docker
+```
+### 2. Build the docker image
+```
+docker-compose up --build -d
+```
+### 3. Configure the initial CGAL settings
+```
+docker-compose exec cgal /code/cgal_init.sh
+```
+### 4. Compile and execute the sample code
+```
+docker-compose exec cgal /code/simple_example/cpp_exec.sh
+```
+*If you want to execute your code, create a new directory, place the cpp file and "cpp_exec.sh" in it, and execute it referring to the code in 4.
 
 <a name="cite"></a>
 ## How to cite
