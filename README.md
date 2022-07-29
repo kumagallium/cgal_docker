@@ -40,11 +40,11 @@ docker-compose up --build -d
 ```
 ### 3. Configure the initial CGAL settings
 ```
-docker-compose exec cgal /code/cgal_init.sh
+docker-compose exec cgal ./cgal_init.sh
 ```
 ### 4. Compile and execute the sample code
 ```
-docker-compose exec cgal /code/simple_example/cpp_exec.sh
+docker-compose exec cgal ./simple_example/cpp_exec.sh
 ```
 *If you want to execute your code, create a new directory, place the cpp file and "cpp_exec.sh" in it, and execute it referring to the code in 4.
 

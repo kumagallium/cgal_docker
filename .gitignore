@@ -1,4 +1,5 @@
-*.off
-*.tri
-CMakeLists.txt
-build
+src/*/*
+!src/*/*.cpp
+!src/*/*.sh
+
+.DS_Store
